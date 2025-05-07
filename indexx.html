@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Navya Zitya | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: #ffffff; color: #000000; }
+    nav { background: #000000; color: #ffffff; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 10; }
+    nav ul { display: flex; gap: 2rem; list-style: none; }
+    nav a { text-decoration: none; color: #ffffff; font-weight: 600; }
+
+    .hero { display: flex; align-items: center; justify-content: center; padding: 4rem 2rem; flex-wrap: wrap; background: #f4f4f4; gap: 2rem; }
+    .hero img { width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 5px solid #000000; }
+    .hero-text { max-width: 500px; text-align: center; }
+    .hero-text h1 { font-size: 2.5rem; }
+    .hero-text h2 { font-size: 1.5rem; margin: 0.5rem 0; }
+    .btn { padding: 0.6rem 1.2rem; background: #000000; color: #ffffff; border-radius: 5px; text-decoration: none; font-weight: 600; display: inline-block; margin: 0.5rem; }
+    .btn:hover { background: #333333; }
+
+    section { max-width: 1100px; margin: 2rem auto; background: #ffffff; padding: 2rem; border-radius: 12px; border: 1px solid #ddd; }
+    h2 { font-size: 1.8rem; margin-bottom: 1rem; text-align: center; }
+
+    .about-wrapper { display: flex; align-items: center; flex-wrap: wrap; gap: 2rem; justify-content: center; }
+    .about-wrapper img { border-radius: 12px; width: 240px; }
+    .about-bio { max-width: 600px; font-size: 1rem; }
+
+    .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+    .card { background: #f4f4f4; padding: 1.5rem; border-radius: 12px; box-shadow: 0 0 5px rgba(0,0,0,0.05); text-align: center; }
+    .card h3 { font-size: 1.2rem; margin-bottom: 0.5rem; }
+
+    .card a {
+      color: inherit;
+      text-decoration: none;
+      font-weight: bold;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    .card a:hover {
+      text-decoration: underline;
+    }
+
+    #projects .card p { font-size: 14px; color: #333333; }
+    .project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+
+    #contact-resume { text-align: center; padding: 3rem 1rem; }
+    #contact-resume .icons a { margin: 0 1rem; font-size: 1.5rem; color: #000; }
+
+    footer { text-align: center; padding: 2rem; font-size: 0.9rem; color: #555; }
+  </style>
+</head>
+<body>
+  <nav>
+    <div><strong>Navya Zitya</strong></div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact-resume">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <img src="navya_pic.jpg" alt="Navya Zitya">
+    <div class="hero-text">
+      <h1>Hello, I'm Navya Zitya</h1>
+      <h2>Data Analyst Enthusiast | SNIST</h2>
+      <a class="btn" href="#contact-resume"><i class="fas fa-paper-plane"></i> Contact Me</a>
+      <a class="btn" href="NAVYA%20ZITYA%20POTTIPOCHALA_RESUME.pdf" target="_blank">View Resume</a>
+    </div>
+  </section>
+
+
+  <section id="about">
+    <h2>Get to Know More</h2>
+    <div class="about-wrapper">
+      <img src="navya_pic_2.jpg" alt="Navya speaking">
+      <div class="about-bio">
+        <div class="card-grid">
+          <div class="card">
+            <h3><i class="fas fa-briefcase"></i> Experience</h3>
+            <p>Documentation Head – Student Placement Committee</p>
+            <p>GSSoC Contributor - GirlScript Summer of Code</p>
+            <p>Internshala Student Partner - Internshala</p>
+            <p>Class Representative – SNIST</p>
+          </div>
+          <div class="card">
+            <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+            <p>B.Tech, SNIST – CGPA 9.14</p>
+            <p>Intermediate – Ramadevi Public School – 73.4%</p>
+            <p>10th – Ramadevi Public School – 81%</p>
+          </div>
+        </div>
+        <p style="margin-top:1rem;">
+          A third-year B.Tech student at SNIST with a strong foundation in data analysis, machine learning, and real-time systems. As Documentation Head in the Student Placement Committee, I’ve coordinated placement documentation efforts while contributing to open-source initiatives and internships that sharpen my technical and communication skills.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="card-grid">
+      <div class="card">Python</div>
+      <div class="card">SQL</div>
+      <div class="card">Tableau</div>
+      <div class="card">Java</div>
+      <div class="card">Git</div>
+      <div class="card">DSA</div>
+      <div class="card">C</div>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <div class="cert-grid">
+      <div class="card">
+        <a href="https://www.coursera.org/account/accomplishments/verify/F4MTSS4S3OH6" target="_blank">Generative AI with LLMs</a>
+      </div>
+      <div class="card">
+        <a href="https://www.linkedin.com/learning/certificates/2c6c72ac6b1f2e46af850b8441b493b679d1663ad86bfaf3296e4d586c739e84?trk=share_certificate" target="_blank">Tableau 2024.1: Essential Training</a>
+      </div>
+      <div class="card">
+        <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Accenture%20North%20America/hzmoNKtzvAzXsEqx8_Accenture%20North%20America_8zzPFBSQ4K2rKSryC_1716935974134_completion_certificate.pdf" target="_blank">Data Analytics Virtual Experience - Accenture</a>
+      </div>
+      <div class="card">
+        <a href="https://www.coursera.org/account/accomplishments/verify/VQ2EZJBKSNER" target="_blank">SQL for Data Science</a>
+      </div>
+      <div class="card">
+        <a href="https://www.linkedin.com/learning/certificates/42371b6c095d49e16ee577c354bfee6184d05478fd8d79ff0dbf26fe81d5c9f3" target="_blank">Git Essential Training</a>
+      </div>
+      <div class="card">
+        <a href="https://www.credly.com/badges/cc08bcd0-cc93-4dcc-8209-5faafbc6708f/linked_in_profile" target="_blank">AWS Data Engineering</a>
+      </div>
+      <div class="card">
+        <a href="https://www.credly.com/badges/21fd26fa-2892-4b28-80fe-1dfedffeacd9/linked_in_profile" target="_blank">AWS Cloud Foundations</a>
+      </div> 
+    </div>
+  </section>
+
+  
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+  
+      <div class="card">
+        <a href="https://your-deployment-link-1.com" target="_blank">Real-Time Streaming Data Analysis with Apache Druid</a>
+        <p>Designed a real-time data analysis platform using Apache Druid for academic performance insights. Used Druid SQL for low-latency queries, automated ingestion with Python, and improved query performance by 40%.</p>
+      </div>
+  
+      <div class="card">
+        <a href="https://your-deployment-link-2.com" target="_blank">Text-to-SQL Query Conversion Using Gen AI and LLM</a>
+        <p>Built a system that converts natural language text into SQL queries using Google's Gemini LLM. Integrated Gen AI and prompt engineering to enable seamless interaction with databases via natural language.</p>
+      </div>
+  
+      <div class="card">
+        <a href="https://github.com/Navyazitya/Stackoverflow-Analysis" target="_blank">Job Analysis on Stack Overflow Data</a>
+        <p>Analyzed 250,000+ survey responses using Python, SQL, and Tableau. Highlighted trends in job roles, technologies, and skill demands. Built 20+ dashboards revealing career growth patterns and emerging tech stacks.</p>
+      </div>
+  
+      <div class="card">
+        <a href="https://github.com/Navyazitya/Bharat_intern_Task1" target="_blank">Movie Recommendation System</a>
+        <p>Developed a personalized movie recommendation system using collaborative and content-based filtering. Deployed as a Streamlit app with intuitive UI and real-time suggestions based on user preferences.</p>
+    </div>
+  
+      <div class="card">
+        <a href="https://github.com/Navyazitya/OIBSIP/tree/main/OIBSIP_TASK3" target="_blank">Unveiling the Android App Market Analysis</a>
+        <p>Performed exploratory data analysis on Google Play Store data using Python and Plotly. Analyzed app categories, user ratings, and pricing trends. Created interactive visualizations to uncover insights about market dynamics and user behavior.</p>
+      </div>
+  
+      <div class="card">
+        <a href="https://github.com/Navyazitya/Celebrity_face_detection" target="_blank">Celebrity Face Detection</a>
+        <p>Implemented a face recognition system using OpenCV and wavelet transforms. Trained models with SVM and Random Forest, performed hyperparameter tuning, and deployed with a Streamlit interface.</p>
+    </div>
+  
+    </div>
+  </section>
+
+  <section id="contact-resume">
+    <h2>Contact Me</h2>
+    <p>Let's connect on the platforms below:</p>
+    <div class="icons">
+      <a href="https://linkedin.com/in/navyazitya" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/navyazitya" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="mailto:navyazityapottipochala@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Navya Zitya Pottipochala</p>
+  </footer>
+</body>
+</html>
